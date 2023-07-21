@@ -9,38 +9,42 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email = ""
-    @State var password = ""
+    @ObservedObject var viewModel = LoginViewModel()
     
     var body: some View {
         NavigationView {
             VStack {
                 //MARK: Header
-                HeaderView()
+                HeaderView(title: "Login",
+                           subtitle: "Get things done",
+                           angle: 15,
+                           backgound: .pink)
                 
                 //MARK: Login Form
                 
                 Form {
-                    TextField("Email Adress", text: $email)
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(.red)
+                    }
+                    
+                    TextField("Email Adress", text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
-                    SecureField("Password", text: $password)
+                        .textInputAutocapitalization(.none)
+                        .autocorrectionDisabled()
+                    SecureField("Password", text: $viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     
-                    Button {
-                        // Attempt login
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(.blue)
-                            
-                            Text("Log in")
-                                .foregroundColor(.white)
-                                .bold()
-                        }
+                    TLButton(title: "Log in",
+                             backgroung: .blue)
+                    {
+                        viewModel.login()
+                        
                     }
-                    .padding()
-
+                    
                 }
+                .offset(y: -50)
+                //.frame(height: 200)
                 
                 //MARK: Create account
                 
@@ -49,11 +53,15 @@ struct LoginView: View {
                     NavigationLink("Create an account",
                                    destination: RegisterView())
                 }
-                .padding(.bottom, 30)
+                .padding(.bottom, 50)
+                //.frame(height: 5,alignment: .bottom)
+                
                 
                 Spacer()
             }
+            
         }
+        
     }
 }
 
