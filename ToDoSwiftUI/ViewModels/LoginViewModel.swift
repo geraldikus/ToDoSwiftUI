@@ -17,7 +17,14 @@ class LoginViewModel: ObservableObject {
     init() {}
     
     func login() {
+        guard validate() else {
+            print("Error in login() with validate()")
+            return
+        }
         
+        // Try log in
+        
+        Auth.auth().signIn(withEmail: email, password: password)
     }
     
     private func validate() -> Bool {

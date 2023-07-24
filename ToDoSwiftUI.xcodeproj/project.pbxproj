@@ -32,6 +32,7 @@
 		3A85FC692A6A8B940067C774 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85FC682A6A8B940067C774 /* ItemViewModel.swift */; };
 		3A85FC6B2A6A8E5B0067C774 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85FC6A2A6A8E5B0067C774 /* HeaderView.swift */; };
 		3A85FC6D2A6AB18F0067C774 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85FC6C2A6AB18E0067C774 /* TLButton.swift */; };
+		3AA3D6A72A6E8A2100F241EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3D6A62A6E8A2100F241EA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3A85FC682A6A8B940067C774 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		3A85FC6A2A6A8E5B0067C774 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3A85FC6C2A6AB18E0067C774 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		3AA3D6A62A6E8A2100F241EA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				3A85FC452A6A77550067C774 /* GoogleService-Info.plist */,
 				3A85FC302A6A73620067C774 /* ToDoSwiftUIApp.swift */,
+				3AA3D6A62A6E8A2100F241EA /* Extensions.swift */,
 				3A85FC342A6A73660067C774 /* Assets.xcassets */,
 			);
 			path = Other;
@@ -253,6 +256,7 @@
 				3A85FC652A6A8B840067C774 /* LoginViewModel.swift in Sources */,
 				3A85FC592A6A8AF50067C774 /* User.swift in Sources */,
 				3A85FC4F2A6A8A3F0067C774 /* ToDoListView.swift in Sources */,
+				3AA3D6A72A6E8A2100F241EA /* Extensions.swift in Sources */,
 				3A85FC4C2A6A7AEF0067C774 /* ProfileView.swift in Sources */,
 				3A85FC612A6A8B6F0067C774 /* ToDoListViewModel.swift in Sources */,
 				3A85FC5B2A6A8AFE0067C774 /* ToDoListItem.swift in Sources */,
