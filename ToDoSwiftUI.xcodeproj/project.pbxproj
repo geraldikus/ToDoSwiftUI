@@ -155,8 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				3A85FC452A6A77550067C774 /* GoogleService-Info.plist */,
-				3A85FC302A6A73620067C774 /* ToDoSwiftUIApp.swift */,
 				3AA3D6A62A6E8A2100F241EA /* Extensions.swift */,
+				3A85FC302A6A73620067C774 /* ToDoSwiftUIApp.swift */,
 				3A85FC342A6A73660067C774 /* Assets.xcassets */,
 			);
 			path = Other;
