@@ -1,4 +1,5 @@
 # EN
+ToDoList - a simple application for managing a task list. Implemented using SwiftUI and MVVM architecture. Firebase is used for data storage.
 ## Functionality
 - View the list of tasks.
 - Add new tasks.
