@@ -10,7 +10,7 @@ import SwiftUI
 struct ItemView: View {
     
     let item: ToDoListItem
-    @StateObject var viewModel = ProfileViewViewModel()
+    @StateObject var viewModel = ToDoListItemViewViewModel()
     
     var body: some View {
         HStack {
