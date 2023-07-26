@@ -19,26 +19,34 @@ struct RegisterView: View {
                        angle: -15,
                        backgound: .orange)
             
-            Form {
+            VStack {
                 TextField("Full name", text: $viewModel.name)
-                    .textFieldStyle(DefaultTextFieldStyle())
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocorrectionDisabled()
+                    .padding()
                 
                 TextField("Email", text: $viewModel.email)
-                    .textFieldStyle(DefaultTextFieldStyle())
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                     .textInputAutocapitalization(.none)
                     .autocorrectionDisabled()
+                    .padding(.leading)
+                    .padding(.trailing)
+                    .padding(.bottom)
                 
                 SecureField("Password", text: $viewModel.password)
-                    .textFieldStyle(DefaultTextFieldStyle())
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding(.leading)
+                    .padding(.trailing)
                 
                 TLButton(title: "Create account",
                          backgroung: .green, action: {
                     //ACTION Registraion
                     viewModel.register()
                 })
+                .frame(width: 200, height: 70)
             }
-            .offset(y: -50)
+            .offset(y: -70)
+            
             //.frame(height: 250)
             
             Spacer()

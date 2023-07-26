@@ -22,29 +22,32 @@ struct LoginView: View {
                 
                 //MARK: Login Form
                 
-                Form {
-                    if !viewModel.errorMessage.isEmpty {
-                        Text(viewModel.errorMessage)
-                            .foregroundColor(.red)
-                    }
+                VStack {
                     
-                    TextField("Email Adress", text: $viewModel.email)
-                        .textFieldStyle(DefaultTextFieldStyle())
-                        .textInputAutocapitalization(.none)
-                        .autocorrectionDisabled()
-                    SecureField("Password", text: $viewModel.password)
-                        .textFieldStyle(DefaultTextFieldStyle())
+                        if !viewModel.errorMessage.isEmpty {
+                            Text(viewModel.errorMessage)
+                                .foregroundColor(.red)
+                        }
                     
-                    TLButton(title: "Log in",
-                             backgroung: .blue)
-                    {
-                        viewModel.login()
+                        TextField("Email Adress", text: $viewModel.email)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .textInputAutocapitalization(.none)
+                            .autocorrectionDisabled()
+                            .padding()
                         
-                    }
+                        
+                        SecureField("Password", text: $viewModel.password)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding(.leading)
+                            .padding(.trailing)
+                    
+                        TLButton(title: "log in", backgroung: .blue, action: viewModel.login)
+                            .frame(width: 150, height: 70)
                     
                 }
-                .offset(y: -50)
+                .offset(y: -60)
                 //.frame(height: 200)
+                
                 
                 //MARK: Create account
                 
@@ -53,8 +56,8 @@ struct LoginView: View {
                     NavigationLink("Create an account",
                                    destination: RegisterView())
                 }
-                .padding(.bottom, 50)
-                //.frame(height: 5,alignment: .bottom)
+                //.padding(.bottom, 10)
+//                .frame(width: 150, height: 20)
                 
                 
                 Spacer()
