@@ -33,6 +33,7 @@
 		3A85FC6B2A6A8E5B0067C774 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85FC6A2A6A8E5B0067C774 /* HeaderView.swift */; };
 		3A85FC6D2A6AB18F0067C774 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A85FC6C2A6AB18E0067C774 /* TLButton.swift */; };
 		3AA3D6A72A6E8A2100F241EA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3D6A62A6E8A2100F241EA /* Extensions.swift */; };
+		3AFAF9D02A710DAA006D5A59 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFAF9CF2A710DAA006D5A59 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		3A85FC6A2A6A8E5B0067C774 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3A85FC6C2A6AB18E0067C774 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		3AA3D6A62A6E8A2100F241EA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3AFAF9CF2A710DAA006D5A59 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				3AA3D6A62A6E8A2100F241EA /* Extensions.swift */,
 				3A85FC302A6A73620067C774 /* ToDoSwiftUIApp.swift */,
 				3A85FC342A6A73660067C774 /* Assets.xcassets */,
+				3AFAF9CF2A710DAA006D5A59 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				3A85FC382A6A73660067C774 /* Preview Assets.xcassets in Resources */,
 				3A85FC462A6A77550067C774 /* GoogleService-Info.plist in Resources */,
+				3AFAF9D02A710DAA006D5A59 /* Launch Screen.storyboard in Resources */,
 				3A85FC352A6A73660067C774 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +399,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -424,6 +429,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
